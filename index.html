@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uspallata Bodegón, una experiencia porteña contemporánea con sabores clásicos, reservas, carta y delivery."
+    />
+    <title>Uspallata Bodegón | Tradición porteña</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Uspallata Bodegón inicio">
+        <span class="brand-mark">UB</span>
+        <span>Uspallata Bodegón</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#carta">Carta</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Presentación Uspallata Bodegón">
+        <div class="hero-media" role="img" aria-label="Salón elegante de bodegón porteño iluminado cálidamente"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <span class="eyebrow">Bodegón porteño contemporáneo</span>
+          <h1>Uspallata Bodegón. Tradición porteña. Sabores que invitan a volver.</h1>
+          <p>
+            Cocina honesta, fuego lento y una sala cálida donde cada detalle honra los clásicos
+            de Buenos Aires con una mirada actual.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary shimmer" href="#reservas">Reservar mesa</a>
+            <a class="btn btn-secondary" href="#carta">Ver carta</a>
+          </div>
+        </div>
+        <div class="hero-card reveal" aria-label="Información destacada">
+          <span>Hoy</span>
+          <strong>Ojo de bife al Malbec</strong>
+          <small>Servicio de cena desde las 20:00</small>
+        </div>
+      </section>
+
+      <section class="section intro-section">
+        <div class="intro-grid">
+          <article class="intro-copy reveal">
+            <span class="eyebrow">Calidez, tradición y oficio</span>
+            <h2>La mesa porteña elevada a una experiencia de categoría.</h2>
+            <p>
+              En Uspallata Bodegón conviven los manteles crema, el brillo del dorado envejecido y
+              el aroma de una cocina que respeta el producto. Cada plato nace de recetas conocidas,
+              ejecutadas con precisión y presentadas con sobriedad.
+            </p>
+          </article>
+          <div class="stats reveal">
+            <div>
+              <strong>28</strong>
+              <span>cubiertos íntimos</span>
+            </div>
+            <div>
+              <strong>12</strong>
+              <span>cortes y fuegos</span>
+            </div>
+            <div>
+              <strong>90</strong>
+              <span>etiquetas argentinas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="carta">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Carta sin PDF</span>
+          <h2>Platos clásicos, servidos con elegancia.</h2>
+          <p>
+            Una selección curada por categorías, pensada para recorrer la cocina de bodegón desde
+            las entradas hasta los postres de sobremesa larga.
+          </p>
+        </div>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Categorías de carta">
+          <button class="active" type="button" data-category="entradas">Entradas</button>
+          <button type="button" data-category="principales">Principales</button>
+          <button type="button" data-category="pastas">Pastas</button>
+          <button type="button" data-category="postres">Postres</button>
+        </div>
+
+        <div class="menu-grid" aria-live="polite">
+          <article class="menu-card reveal" data-category="entradas">
+            <img
+              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=80"
+              alt="Provoleta dorada con hierbas"
+            />
+            <div>
+              <span>Entrada</span>
+              <h3>Provoleta de la casa</h3>
+              <p>Queso dorado al hierro, tomates confitados, orégano fresco y pan de campo.</p>
+              <strong>$8.900</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="entradas">
+            <img
+              src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80"
+              alt="Empanadas criollas en plato de cerámica"
+            />
+            <div>
+              <span>Entrada</span>
+              <h3>Empanadas cortadas a cuchillo</h3>
+              <p>Masa hojaldrada, carne braseada, huevo, aceitunas y salsa criolla ahumada.</p>
+              <strong>$6.400</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="entradas">
+            <img
+              src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80"
+              alt="Tabla de fiambres y quesos"
+            />
+            <div>
+              <span>Entrada</span>
+              <h3>Picada Uspallata</h3>
+              <p>Selección de fiambres, quesos estacionados, berenjenas y focaccia tibia.</p>
+              <strong>$14.200</strong>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="principales">
+            <img
+              src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80"
+              alt="Bife servido con papas doradas"
+            />
+            <div>
+              <span>Principal</span>
+              <h3>Ojo de bife al Malbec</h3>
+              <p>Corte madurado, reducción de Malbec, papas rotas y vegetales de estación.</p>
+              <strong>$24.900</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="principales">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+              alt="Milanesa napolitana con guarnición"
+            />
+            <div>
+              <span>Principal</span>
+              <h3>Milanesa porteña premium</h3>
+              <p>Ternera apanada, pomodoro, mozzarella fior di latte, jamón natural y papas.</p>
+              <strong>$18.500</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="principales">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+              alt="Pescado de río con vegetales"
+            />
+            <div>
+              <span>Principal</span>
+              <h3>Surubí dorado a la plancha</h3>
+              <p>Manteca avellanada, limón quemado, puré de coliflor y hojas amargas.</p>
+              <strong>$21.300</strong>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="pastas">
+            <img
+              src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=900&q=80"
+              alt="Pasta casera con salsa"
+            />
+            <div>
+              <span>Pasta</span>
+              <h3>Ravioles de osobuco</h3>
+              <p>Pasta casera, fondo oscuro, gremolata y queso curado rallado en mesa.</p>
+              <strong>$16.900</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="pastas">
+            <img
+              src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80"
+              alt="Ñoquis con salsa cremosa"
+            />
+            <div>
+              <span>Pasta</span>
+              <h3>Ñoquis de papa quemada</h3>
+              <p>Crema de hongos, salvia crocante, nuez moscada y aceite de oliva mendocino.</p>
+              <strong>$14.800</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="pastas">
+            <img
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=900&q=80"
+              alt="Spaghetti con tomate"
+            />
+            <div>
+              <span>Pasta</span>
+              <h3>Tallarines de bodegón</h3>
+              <p>Salsa fileto larga cocción, albóndigas de ternera y albahaca fresca.</p>
+              <strong>$13.900</strong>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="postres">
+            <img
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80"
+              alt="Flan con dulce de leche"
+            />
+            <div>
+              <span>Postre</span>
+              <h3>Flan mixto de vainilla</h3>
+              <p>Huevos de campo, crema batida a mano y dulce de leche familiar.</p>
+              <strong>$6.900</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="postres">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80"
+              alt="Panqueque con dulce de leche"
+            />
+            <div>
+              <span>Postre</span>
+              <h3>Panqueque quemado</h3>
+              <p>Dulce de leche, azúcar caramelizada, helado de crema y nuez tostada.</p>
+              <strong>$7.400</strong>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-category="postres">
+            <img
+              src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=80"
+              alt="Tarta tibia de manzana"
+            />
+            <div>
+              <span>Postre</span>
+              <h3>Tarta tibia de manzana</h3>
+              <p>Masa quebrada, manzanas especiadas, crema inglesa y almendras.</p>
+              <strong>$7.100</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section specialties" id="eventos">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Especialidades y encuentros</span>
+          <h2>Para cenas memorables, eventos íntimos y celebraciones porteñas.</h2>
+        </div>
+        <div class="specialty-grid">
+          <article class="feature-card large reveal">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"
+              alt="Mesa elegante con platos y vino"
+            />
+            <div>
+              <span>Casa llena</span>
+              <h3>Menú bodegón de pasos</h3>
+              <p>Una experiencia para grupos con entrada compartida, principales al centro y vinos sugeridos.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80"
+              alt="Chef terminando un plato"
+            />
+            <div>
+              <span>Fuego y oficio</span>
+              <h3>Cortes seleccionados</h3>
+              <p>Maduración controlada y puntos exactos para carnes con carácter.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80"
+              alt="Copas de vino en cava"
+            />
+            <div>
+              <span>Cava argentina</span>
+              <h3>Maridajes de autor</h3>
+              <p>Etiquetas de pequeños productores y clásicos mendocinos.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Nuestra historia</span>
+          <h2>Una línea de tiempo hecha de barrio, cocina y hospitalidad.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>1984</span>
+            <h3>La primera mesa familiar</h3>
+            <p>La receta de la abuela Uspallata empieza a servirse en reuniones de barrio.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2006</span>
+            <h3>El bodegón toma forma</h3>
+            <p>La cocina crece con pastas caseras, carnes al hierro y una carta de vinos porteña.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2026</span>
+            <h3>Tradición contemporánea</h3>
+            <p>Un nuevo salón honra lo clásico con diseño refinado y servicio preciso.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Galería editorial</span>
+          <h2>Postales de una noche en Uspallata.</h2>
+        </div>
+        <div class="gallery-grid">
+          <img
+            class="reveal"
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+            alt="Salón de restaurante cálido"
+          />
+          <img
+            class="reveal tall"
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
+            alt="Mesas servidas en restaurante elegante"
+          />
+          <img
+            class="reveal"
+            src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=80"
+            alt="Chef emplatando en cocina"
+          />
+          <img
+            class="reveal wide"
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=80"
+            alt="Brindis en mesa de restaurante"
+          />
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Voces de la mesa</span>
+          <h2>Clientes que vuelven por el sabor y se quedan por el trato.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="reveal">
+            <p>
+              "Tiene alma de bodegón y servicio de restaurante premium. La milanesa es impecable."
+            </p>
+            <cite>Lucía R. · San Telmo</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>
+              "Reservamos para un cumpleaños y todo estuvo cuidado: vinos, tiempos y ambiente."
+            </p>
+            <cite>Martín P. · Barracas</cite>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>
+              "El ojo de bife y los ravioles justifican volver. Elegante sin perder calidez."
+            </p>
+            <cite>Carolina M. · Palermo</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section reservations" id="reservas">
+        <div class="reservation-panel reveal">
+          <div class="reservation-copy">
+            <span class="eyebrow">Reservas</span>
+            <h2>Elegí día, horario y asegurá tu mesa.</h2>
+            <p>
+              Nuestro equipo confirma cada reserva para garantizar una experiencia fluida desde la
+              llegada hasta la sobremesa.
+            </p>
+            <a class="btn btn-primary shimmer" href="https://wa.me/5491123456789?text=Hola%20Uspallata%20Bodeg%C3%B3n%2C%20quiero%20reservar%20una%20mesa" target="_blank" rel="noreferrer">
+              Confirmar por WhatsApp
+            </a>
+          </div>
+          <form class="booking-card" aria-label="Sistema visual de reservas">
+            <label>
+              Fecha
+              <input type="date" name="date" />
+            </label>
+            <label>
+              Personas
+              <select name="guests">
+                <option>2 personas</option>
+                <option>3 personas</option>
+                <option>4 personas</option>
+                <option>5 personas</option>
+                <option>6+ personas</option>
+              </select>
+            </label>
+            <div class="time-picker" aria-label="Selección de horario">
+              <button type="button">20:00</button>
+              <button type="button" class="selected">20:30</button>
+              <button type="button">21:00</button>
+              <button type="button">21:30</button>
+              <button type="button">22:00</button>
+              <button type="button">22:30</button>
+            </div>
+            <button class="btn btn-secondary full" type="button">Solicitar reserva</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section delivery">
+        <div class="delivery-grid">
+          <div class="map-card reveal" aria-label="Mapa de cobertura de delivery">
+            <div class="map-core">Uspallata</div>
+            <span class="map-ring ring-one"></span>
+            <span class="map-ring ring-two"></span>
+            <span class="map-pin pin-one">San Telmo</span>
+            <span class="map-pin pin-two">Barracas</span>
+            <span class="map-pin pin-three">La Boca</span>
+          </div>
+          <article class="delivery-copy reveal">
+            <span class="eyebrow">Delivery cuidado</span>
+            <h2>El bodegón también llega a casa.</h2>
+            <p>
+              Cobertura en San Telmo, Barracas, La Boca y alrededores. Enviamos platos preparados
+              para conservar temperatura, textura y presentación.
+            </p>
+            <a class="btn btn-primary shimmer" href="https://wa.me/5491123456789?text=Hola%20Uspallata%20Bodeg%C3%B3n%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noreferrer">
+              Pedir por WhatsApp
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <div>
+        <a class="brand" href="#inicio">
+          <span class="brand-mark">UB</span>
+          <span>Uspallata Bodegón</span>
+        </a>
+        <p>Tradición porteña, vinos argentinos y servicio cálido en un salón de estética contemporánea.</p>
+      </div>
+      <address>
+        <strong>Ubicación</strong>
+        Av. Uspallata 1842, Buenos Aires<br />
+        Lun a sáb · 12:00 a 00:30<br />
+        <a href="tel:+541123456789">+54 11 2345-6789</a><br />
+        <a href="mailto:reservas@uspallatabodegon.com">reservas@uspallatabodegon.com</a>
+      </address>
+      <div>
+        <strong>Convertí la visita en reserva</strong>
+        <p>Mesas limitadas, atención personalizada y confirmación directa por WhatsApp.</p>
+        <a class="btn btn-primary shimmer" href="#reservas">Reservar ahora</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
