@@ -233,8 +233,8 @@ export default function RestaurantLanding() {
           </div>
         </section>
 
-        <section className="conversion-grid">
-          <article className="menu-preview reveal" id="carta">
+        <section className="standalone-section menu-standalone" id="carta">
+          <article className="menu-preview reveal">
             <span className="section-label">Carta</span>
             <h2>Una carta para disfrutar sin apuros.</h2>
             <p>Platos clásicos, ingredientes de calidad y recetas que honran la tradición.</p>
@@ -263,8 +263,10 @@ export default function RestaurantLanding() {
               Reservar y pedir sugerencia
             </a>
           </article>
+        </section>
 
-          <article className="booking-panel reveal" id="reservas">
+        <section className="standalone-section booking-standalone" id="reservas">
+          <article className="booking-panel reveal">
             <span className="section-label">Reservas</span>
             <h2>Tu mesa te espera.</h2>
             <p>Elegí el día, horario y cantidad de personas. Confirmamos por WhatsApp.</p>
@@ -300,7 +302,9 @@ export default function RestaurantLanding() {
               </a>
             </div>
           </article>
+        </section>
 
+        <section className="standalone-section delivery-standalone">
           <article className="delivery-panel reveal">
             <span className="section-label">Delivery</span>
             <h2>Llevamos el bodegón a tu casa.</h2>
