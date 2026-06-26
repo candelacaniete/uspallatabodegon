@@ -326,18 +326,15 @@ export default function RestaurantLanding() {
           </article>
         </section>
 
-        <section className="editorial-gallery">
-          {gallery.map((item) => (
-            <img className="reveal" src={item.image} alt={item.alt} key={item.alt} />
-          ))}
-        </section>
-
-        <section className="quotes-band">
-          {quotes.map((quote) => (
-            <blockquote className="reveal" key={quote.author}>
-              <p>{quote.text}</p>
-              <cite>{quote.author}</cite>
-            </blockquote>
+        <section className="proof-grid">
+          {gallery.map((item, index) => (
+            <article className="proof-card" key={item.alt}>
+              <img className="reveal" src={item.image} alt={item.alt} />
+              <blockquote className="reveal">
+                <p>{quotes[index].text}</p>
+                <cite>{quotes[index].author}</cite>
+              </blockquote>
+            </article>
           ))}
         </section>
       </main>
