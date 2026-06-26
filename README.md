@@ -1,7 +1,17 @@
 # Uspallata Bodegón
 
-Landing premium estática para un restaurante inspirado en los bodegones porteños clásicos, con estética contemporánea, carta visual, reservas y acceso directo a WhatsApp.
+Landing premium en Next.js para un restaurante inspirado en los bodegones porteños clásicos, con estética contemporánea, carta visual, reservas y acceso directo a WhatsApp.
 
 ## Vista local
 
-Abrí `index.html` en el navegador o serví el directorio con cualquier servidor estático.
+```bash
+npm install
+npm run dev
+```
+
+## Deploy en Vercel
+
+- Framework Preset: `Next.js`
+- Build Command: `npm run build`
+- Output Directory: dejar vacío
+- Install Command: `npm install`

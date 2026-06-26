@@ -11,8 +11,8 @@
   --muted: #8c7b6a;
   --line: rgba(199, 163, 90, 0.22);
   --shadow: 0 28px 80px rgba(11, 9, 8, 0.34);
-  --serif: "Cormorant Garamond", Georgia, serif;
-  --sans: "Inter", Arial, sans-serif;
+  --serif: var(--font-serif), Georgia, serif;
+  --sans: var(--font-sans), Arial, sans-serif;
 }
 
 * {
